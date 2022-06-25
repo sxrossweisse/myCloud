@@ -33,8 +33,9 @@
     </properties>
 
     <modules>
-
         <module>cloud-provider-payment</module>
+        <module>cloud-consumer-payment</module>
+        <module>cloud-common-payment</module>
     </modules>
 
     <dependencyManagement>
