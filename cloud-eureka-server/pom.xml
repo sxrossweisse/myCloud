@@ -9,20 +9,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-consumer-payment</artifactId>
+    <artifactId>cloud-eureka-server</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.suitspoon</groupId>
             <artifactId>cloud-common-payment</artifactId>
             <version>${myCloud.version}</version>
         </dependency>
 
-        <!--eureka 客户端注册-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
 
     </dependencies>
 

@@ -13,12 +13,13 @@
 
     <groupId>com.suitspoon</groupId>
     <artifactId>myCloud</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
     <packaging>pom</packaging>
     <name>myCloud</name>
     <description>my cloud Project</description>
 
     <properties>
+        <myCloud.version>0.0.2</myCloud.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -36,6 +37,7 @@
         <module>cloud-provider-payment</module>
         <module>cloud-consumer-payment</module>
         <module>cloud-common-payment</module>
+        <module>cloud-eureka-server</module>
     </modules>
 
     <dependencyManagement>
@@ -72,11 +74,23 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-
-
-
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <finalName>myCloud</finalName>
+        <plugins>
+            <!--maven 子模块版本统一管理-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <generateBackupPoms>false</generateBackupPoms>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
 
 </project>

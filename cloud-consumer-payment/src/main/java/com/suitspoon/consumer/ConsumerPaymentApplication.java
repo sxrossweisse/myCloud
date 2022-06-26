@@ -2,6 +2,7 @@ package com.suitspoon.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2022/6/25 17:47
  * @description 用一句话描述
  */
+@EnableEurekaClient
 @SpringBootApplication
 @RestController
 public class ConsumerPaymentApplication {
