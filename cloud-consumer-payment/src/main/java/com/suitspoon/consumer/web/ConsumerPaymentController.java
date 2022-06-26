@@ -19,7 +19,7 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/consumer")
 public class ConsumerPaymentController {
 
-    private static final String PROVIDER_REQUEST = "http://localhost:8001/cloud-order/insert";
+    private static final String PROVIDER_REQUEST = "http://PROVIDER-SERVICE/cloud-order/insert";
 
     private RestTemplate restTemplate;
 
