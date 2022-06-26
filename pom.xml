@@ -38,6 +38,8 @@
         <module>cloud-consumer-payment</module>
         <module>cloud-common-payment</module>
         <module>cloud-eureka-server</module>
+        <module>cloud-eureka-server-second</module>
+        <module>cloud-eureka-server-thrid</module>
     </modules>
 
     <dependencyManagement>
