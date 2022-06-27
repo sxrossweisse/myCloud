@@ -9,21 +9,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-eureka-server-second</artifactId>
+    <artifactId>cloud-consul</artifactId>
+
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.suitspoon</groupId>
             <artifactId>cloud-common-payment</artifactId>
             <version>${myCloud.version}</version>
         </dependency>
 
+        <!-- consul -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+        </dependency>
     </dependencies>
-
-
 </project>
