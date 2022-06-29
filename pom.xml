@@ -40,6 +40,7 @@
         <module>cloud-eureka-server</module>
         <module>cloud-eureka-server-second</module>
         <module>cloud-eureka-server-thrid</module>
+        <module>cloud-provider-payment-feign</module>
     </modules>
 
     <dependencyManagement>
