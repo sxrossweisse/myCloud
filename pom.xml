@@ -41,6 +41,7 @@
         <module>cloud-eureka-server-second</module>
         <module>cloud-eureka-server-thrid</module>
         <module>cloud-provider-payment-feign</module>
+        <module>cloud-provider-hystrix</module>
     </modules>
 
     <dependencyManagement>

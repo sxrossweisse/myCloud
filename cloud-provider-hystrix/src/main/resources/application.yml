@@ -1,0 +1,16 @@
+server:
+  port: 8007
+
+spring:
+  application:
+    name: provider-hystrix
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka01.com:7001/eureka/
+  instance:
+    instance-id: su-provider
+    prefer-ip-address: true

@@ -1,6 +1,7 @@
 package com.suitspoon.providerfeign.feign;
 
 import com.suitspoon.common.base.APIResult;
+import com.suitspoon.providerfeign.feign.impl.ProviderFeignImpl;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @description 用一句话描述
  */
 @Component
-@FeignClient("provider-service")
+@FeignClient(value = "provider-service", fallback = ProviderFeignImpl.class)
 public interface ProviderFeign {
 
     @GetMapping("/cloud-order/insert")
