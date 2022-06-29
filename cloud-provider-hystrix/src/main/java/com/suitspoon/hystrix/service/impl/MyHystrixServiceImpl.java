@@ -32,7 +32,4 @@ public class MyHystrixServiceImpl implements MyHystrixService {
         return "这回真的是全局异常了啊啊";
     }
 
-    public String salvation(){
-        return "异常啦异常";
-    }
 }
