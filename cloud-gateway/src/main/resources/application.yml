@@ -1,0 +1,25 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # 开启从注册中心创建动态网关的功能，利用微服务名字进行路由
+      routes:
+        - id: payment
+          uri: lb://provider-service
+          predicates:
+            - Path=/cloud-order/insert
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka01.com:7001/eureka/
+  instance:
+    instance-id: cloud-gateway-service

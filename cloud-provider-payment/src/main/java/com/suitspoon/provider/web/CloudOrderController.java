@@ -44,7 +44,6 @@ public class CloudOrderController {
 
     @GetMapping("/insert")
     public APIResult<Long> insertTest() {
-        int i = 10/0;
         CloudOrder cloudOrder = new CloudOrder();
         String no = StringUtil.uuid32();
         log.info("打印uuid: {}", no);

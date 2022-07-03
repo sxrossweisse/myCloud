@@ -42,6 +42,7 @@
         <module>cloud-eureka-server-thrid</module>
         <module>cloud-provider-payment-feign</module>
         <module>cloud-provider-hystrix</module>
+        <module>cloud-gateway</module>
     </modules>
 
     <dependencyManagement>
